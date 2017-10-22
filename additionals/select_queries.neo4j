@@ -1,0 +1,1 @@
+MATCH (ss:SolarSystem)-[nss:NEARBY_SOLAR_SYSTEM]->(ss2:SolarSystem) return ss,nss,ss2;

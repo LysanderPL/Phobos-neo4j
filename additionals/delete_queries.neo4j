@@ -1,0 +1,4 @@
+MATCH(g:Galaxy)-[r:SOLAR_SYSTEM_IN_GALAXY]->(ss:SolarSystem)-[r2:PLANET_IN_SOLAR_SYSTEM]->(p:Planet) delete r,r2
+MATCH(g:Galaxy)-[r3:PLANET_IN_GALAXY]->(p:Planet) delete r3
+MATCH(ss:SolarSystem)-[nss:NEARBY_SOLAR_SYSTEM]->(ss2:SolarSystem) delete  nss
+MATCH (G:Galaxy) MATCH(S:SolarSystem) MATCH(P:Planet) DELETE P,S,G;
