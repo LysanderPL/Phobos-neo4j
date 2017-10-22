@@ -18,7 +18,7 @@ parameters:
     # A secret key that's used to generate certain security-related tokens
     secret: ThisTokenIsNotSoSecretChangeIt
     neo4j_host: localhost
-    neo4j_port: 7474
+    neo4j_port: 7687
     neo4j_scheme: bolt # default (must be either "http" or "bolt")
     neo4j_user: neo4j
     neo4j_password: neo4j

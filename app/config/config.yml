@@ -70,8 +70,9 @@ swiftmailer:
 
 neo4j:
   connections:
-      scheme: '%neo4j_scheme%'
-      host: '%neo4j_host%'
-      port: '%neo4j_port%'
-      username: '%neo4j_user%'
-      password: '%neo4j_password%'
+      default:
+        scheme: '%neo4j_scheme%'
+        host: '%neo4j_host%'
+        port: '%neo4j_port%'
+        username: '%neo4j_user%'
+        password: '%neo4j_password%'
