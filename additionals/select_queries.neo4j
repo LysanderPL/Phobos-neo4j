@@ -1,1 +1,2 @@
 MATCH (ss:SolarSystem)-[nss:NEARBY_SOLAR_SYSTEM]->(ss2:SolarSystem) return ss,nss,ss2;
+MATCH(p:Planet)-[np:NEARBY_PLANET]->(p2:Planet) return p,np,p2 LIMIT 200;
